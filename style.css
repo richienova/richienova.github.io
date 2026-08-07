@@ -463,3 +463,73 @@ footer {
     width: 90%;
   }
 }
+/* ================================
+   PROFILE PHOTO
+   ================================ */
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.hero-photo {
+  order: 2;
+  flex: 0 0 360px;
+}
+
+.hero-photo img {
+  width: 360px;
+  height: 360px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 5px solid #60a5fa;
+
+  box-shadow:
+    0 0 0 10px #152238,
+    0 20px 50px rgba(0, 0, 0, 0.4);
+
+  display: block;
+}
+
+.hero-info {
+  order: 1;
+  flex: 1;
+}
+
+/* ================================
+   MOBILE PHOTO
+   ================================ */
+
+@media (max-width: 700px) {
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .hero-photo {
+    order: 1;
+    flex: none;
+  }
+
+  .hero-info {
+    order: 2;
+  }
+
+  .hero-photo img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+    }
