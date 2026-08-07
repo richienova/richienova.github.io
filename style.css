@@ -173,8 +173,8 @@ a {
 }
 
 .hero-photo img {
-  width: clamp(200px, 25vw, 300px);
-  height: clamp(200px, 25vw, 300px);
+  width: clamp(150px, 25vw, 250px);
+  height: clamp(150px, 25vw, 250px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
