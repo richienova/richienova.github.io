@@ -108,6 +108,14 @@ a {
 .hero .eyebrow {
   color: #93c5fd;
 }
+.resume-section {
+  text-align: center;
+}
+
+.resume-section .btn-primary {
+  display: inline-block;
+  margin: 20px auto 0;
+}
 
 .hero h1 {
   font-size: clamp(42px, 7vw, 72px);
