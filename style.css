@@ -501,35 +501,38 @@ footer {
   flex: 1;
 }
 
-/* ================================
-   MOBILE PHOTO
-   ================================ */
-
-@media (max-width: 700px) {
-
-  .hero-content {
+/* FIX PROFILE PHOTO */
+.hero-photo {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 35px;
-  }
+    justify-content: center;
+    align-items: center;
+}
 
-  .hero-photo {
-    order: 1;
-    flex: none;
-  }
+.hero-photo img {
+    width: 265px !important;
+    height: 265px !important;
+    max-width: 265px !important;
+    max-height: 265px !important;
 
-  .hero-info {
-    order: 2;
-  }
+    object-fit: cover;
+    display: block;
 
-  .hero-photo img {
-    width: 220px;
-    height: 220px;
-  }
+    border-radius: 50% !important;
 
-  .hero-text {
-    margin-left: auto;
-    margin-right: auto;
-  }
+    border: 2px solid #d9e2ec;
+
+    box-shadow: 0 0 0 6px #12233b;
+
+    margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .hero-photo img {
+        width: 230px !important;
+        height: 230px !important;
+        max-width: 230px !important;
+        max-height: 230px !important;
     }
+}
